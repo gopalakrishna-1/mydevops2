@@ -1,0 +1,22 @@
+version: '3'
+services:
+  aws:
+    image: vgkv1996/aws
+    ports:
+      - "90:80"
+    deploy:
+      replicas: 3
+
+  devops:
+    image: vgkv1996/devops
+    ports:
+      - "91:80"
+    deploy:
+      replicas: 3
+
+  awsdevops:
+    image: vgkv1996/awsdevops
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 3
